@@ -2,12 +2,38 @@
   "name": "sakura-logger",
   "version": "1.0.0",
   "description": "Zero-dependency minimum logger for Node.js",
-  "main": "index.js",
-  "keywords": ["log", "logger", "logging", "fast", "output", "stdout"],
-  "author": "Kotone Fami",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs && pnpm run build:types",
+    "build:types": "tsc"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "fast",
+    "output",
+    "stdout"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotonefami/sakura-logger.git"
+  },
+  "author": "Kotone Fami <fami@ktnfm.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kotonefami/sakura-logger/issues"
+  },
+  "homepage": "https://github.com/kotonefami/sakura-logger",
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "esbuild": "^0.20.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
   }
 }
