@@ -1,11 +1,11 @@
 {
   "name": "sakura-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zero-dependency minimum logger for Node.js",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["log", "logger", "logging", "fast", "output", "stdout"],
+  "author": "Kotone Fami",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.17",
     "tsx": "^4.7.1"
