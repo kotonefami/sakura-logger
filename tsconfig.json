@@ -6,7 +6,7 @@
         "moduleResolution": "NodeNext",
         "declaration": true,
         "emitDeclarationOnly": true,
-        "outFile": "./dist/index.d.ts"
+        "outDir": "./dist/declaration"
     },
     "include": ["./src/*.ts"]
 }

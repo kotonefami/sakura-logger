@@ -1,4 +1,5 @@
 import { build } from "esbuild";
+import { bundle } from "dts-bundle";
 
 build({
     entryPoints: ["./src/index.ts"],
@@ -11,4 +12,9 @@ build({
     outfile: "./dist/index.cjs.js",
     format: "cjs",
     bundle: true
+});
+bundle({
+    name: "sakura-logger",
+    main: "./dist/declaration/index.d.ts",
+    out: "../index.d.ts"
 });

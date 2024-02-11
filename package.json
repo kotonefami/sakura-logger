@@ -6,11 +6,12 @@
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "./dist"
+    "./dist/index.cjs.js",
+    "./dist/index.esm.js",
+    "./dist/index.d.ts"
   ],
   "scripts": {
-    "build": "node ./scripts/build.mjs && pnpm run build:types",
-    "build:types": "tsc"
+    "build": "tsc && node ./scripts/build.mjs"
   },
   "keywords": [
     "log",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/kotonefami/sakura-logger",
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "dts-bundle": "^0.7.3",
     "esbuild": "^0.20.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
